@@ -1,6 +1,8 @@
 import { useContext, useMemo, useState } from "react";
 import bg from "./assets/bag.png";
 import Prime from "./assets/Prime.png";
+import right from "./assets/right.png";
+
 import "./App.css";
 import Circle from "./components/circle/circle";
 import Navbar from "./components/Navbar/Navbar";
@@ -50,20 +52,41 @@ function App() {
                 </div>
                 <div className="relative z-1 font-plus-jakarta">
                   <Navbar />
-                  <div className="flex flex-row justify-center my-12">
+                  <div className="flex flex-row justify-center my-4 lg:my-12">
                     <div
-                      className="font-clash-display text-5xl font-bold text-center md:w-[1000px] "
+                      className="font-clash-display text-2xl lg:text-5xl font-bold text-center w-[500px] lg:w-[1000px] tracking-wider"
                       style={{ color: colorDark ? "#fff" : "#333" }}
                     >
                       Crafting digital experiences that captivate and convert
                     </div>
                   </div>
-                  <div className="flex flex-row justify-center mt-20">
-                    <img src={Prime} />
+                  <div className="2xl:w-[1640px] mx-auto px-4 lg:px-0">
+                    <div className="flex flex-row justify-between mt-6 md:mt-20 ">
+                      <div className="w-[200px] lg:w-[300px] md:block hidden">
+                        <h1 className="font-clash-display text-7xl font-bold h1">
+                          10x
+                        </h1>
+                        <h4 className="text-lg lg:text-2xl text-white font-clash-display tracking-wide">
+                          Better personalized services
+                        </h4>
+                      </div>
+                      <div className="mx-auto">
+                        <img
+                          src={Prime}
+                          className="xl:w-full lg:w-[200px] md:w-[160px] w-full"
+                        />
+                      </div>
+                      <div className="md:block hidden">
+                        <img
+                          src={right}
+                          className="xl:w-full lg:w-[200px] w-[160px]"
+                        />
+                      </div>
+                    </div>
                   </div>
                   <div>
                     <div className="xl:w-[1400px] mx-auto">
-                      <div className="flex flex-row justify-between items-center mt-20">
+                      <div className="flex flex-col lg:flex-row  space-y-3 lg:space-y-0  justify-between items-center mt-20">
                         <div
                           className="font-bold text-xl flex space-x-6 items-center px-12 py-4 border border-dashed"
                           style={{
@@ -74,7 +97,7 @@ function App() {
                           UI/UX and Graphics
                         </div>
                         <button
-                          className="flex space-x-6 items-center px-12 py-4"
+                          className="flex space-x-2 xs:space-x-6 items-center px-12 py-4"
                           style={{
                             background:
                               "linear-gradient(92.29deg, rgba(215, 108, 108, 0.8) 0%, #A326DE 100%)",

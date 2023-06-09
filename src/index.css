@@ -11,3 +11,9 @@
 .font-clash-display {
     font-family: 'Clash Display', sans-serif;
 }
+
+.h1{
+    background: -webkit-linear-gradient(116.1deg, #0075FF 0%, #FF007A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
