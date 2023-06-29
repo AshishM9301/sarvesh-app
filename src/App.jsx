@@ -26,7 +26,7 @@ function App() {
               // style={{ backgroundColor: colorDark ? "#333" : "#fff" }}
             >
               <div
-                className="z-5 absolute w-screen h-screen "
+                className="z-5 absolute w-screen h-[130vh] md:min-h-screen "
                 style={{ backgroundColor: colorDark ? "#333" : "#fff" }}
               >
                 <div className="z-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -41,14 +41,14 @@ function App() {
                 </div>
               </div>
               <div
-                className="w-screen h-screen z-50 relative "
+                className="w-screen h-[130vh] md:min-h-screen z-50 relative "
                 style={{
                   backgroundColor: "rgba(255,255,255,0.1)",
                   backdropFilter: "blur(100px)",
                 }}
               >
                 <div className="absolute">
-                  <img src={bg} className="w-screen h-screen" />
+                  <img src={bg} className="w-screen min-h-screen" />
                 </div>
                 <div className="relative z-1 font-plus-jakarta">
                   <Navbar />
@@ -60,9 +60,9 @@ function App() {
                       Crafting digital experiences that captivate and convert
                     </div>
                   </div>
-                  <div className="2xl:w-[1640px] mx-auto px-4 lg:px-0">
+                  <div className="   xl:w-[1200px] mx-auto px-4 lg:px-0">
                     <div className="flex flex-row justify-between mt-6 md:mt-20 ">
-                      <div className="w-[200px] lg:w-[300px] md:block hidden">
+                      <div className="w-[100px] lg:w-[300px] md:block hidden">
                         <h1 className="font-clash-display text-7xl font-bold h1">
                           10x
                         </h1>
@@ -73,7 +73,7 @@ function App() {
                       <div className="mx-auto">
                         <img
                           src={Prime}
-                          className="xl:w-full lg:w-[200px] md:w-[160px] w-full"
+                          className="xl:w-full lg:w-[100px] md:w-[160px]  w-full"
                         />
                       </div>
                       <div className="md:block hidden">
@@ -85,7 +85,7 @@ function App() {
                     </div>
                   </div>
                   <div>
-                    <div className="xl:w-[1400px] mx-auto">
+                    <div className="xl:w-[1200px] mx-auto">
                       <div className="flex flex-col lg:flex-row  space-y-3 lg:space-y-0  justify-between items-center mt-20">
                         <div
                           className="font-bold text-xl flex space-x-6 items-center px-12 py-4 border border-dashed"
