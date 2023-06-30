@@ -22,7 +22,7 @@ function App() {
         {useMemo(() => (
           <>
             <div
-              className="flex-1 relative"
+              className="flex-1 relative overflow-x-hidden"
               // style={{ backgroundColor: colorDark ? "#333" : "#fff" }}
             >
               <div
